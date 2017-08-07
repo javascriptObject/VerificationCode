@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/details.css"/>
+	<title>验证码</title>
+</head>
+<body>
+<div class="ddetails-header">
+	<div class="ddetails-con">
+		<div class="J_after">
+			<input type="hidden"  id="J_down" data-link="'+data.downUrl+'">
+			<div class="checkcode">
+				<input type="text" id="J_codetext" placeholder="请输入验证码" maxlength="4">
+				<canvas class="J_codeimg" id="myCanvas" onclick="createCode()">
+					您的浏览器不支持canvas元素。
+				</canvas>
+			</div>
+			<input type="button" value="提交" class="btn-code" onClick="validate();">
+			<input type="button" value="取消" class="btn-code btn-no">
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/index.js"></script>
